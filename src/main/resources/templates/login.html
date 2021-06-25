@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" th:href="@{/style.css}" type="text/css">
+    <title>Login</title>
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">EMPLOYEE MANAGEMENT <span style="font-style: italic"> SYSTEM</span></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div>
+        <div class="row form login">
+
+            <!--            Error Message-->
+            <div th:if="${param.error}">
+                <div class="error-message">Invalid username or password</div>
+            </div>
+
+            <!--            Logout Message-->
+            <div th:if="${param.logout}">
+                <div class="logout-message">You've been logged out</div>
+            </div>
+
+            <h5>Login</h5>
+            <form action="#" th:action="@{/login}" method="post" class="col s12">
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input id="username" type="text" name="username" required autofocus="autofocus" class="validate">
+                        <label for="username">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input id="password" type="password" name="password" required autofocus="autofocus" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" id="login-submit" name="login-submit">Login
+                    <i class="material-icons right"></i>
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>M.AutoInit();</script>
+</body>
+</html>

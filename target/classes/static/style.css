@@ -1,0 +1,75 @@
+.h5-header {
+    position: relative;
+    margin: 50px 0 30px 0;
+    color: dimgrey;
+}
+
+nav {
+    background: #f17e30;
+}
+
+.nav-wrapper a {
+    color: #FFFFFF;
+}
+
+.btn-floating {
+    background: #f17e30;
+    float: right;
+    margin-top: 30px;
+}
+
+.btn-floating:hover {
+    background: #ff9450;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+    background-color: #f17e30;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 2px solid #f17e30;
+}
+
+.btn, .btn-large, .btn-small {
+    background-color: #f17e30;
+}
+
+.btn:hover {
+    background-color: #ff9450;
+}
+
+.modal {
+    max-height: 100%;
+    overflow: visible
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+    color: #f17e30;
+}
+
+.action {
+    margin-right: 15px;
+}
+
+input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #f17e30;
+}
+
+.update:hover {
+    background: white;
+    color: #f17e30;
+}
+
+.delete:hover {
+    background: #f52e2e;
+    color: white;
+}
+
+.success-message {
+    margin-top: 20px;
+    color: aquamarine;
+}
+
+/*.input-field:focus {*/
+/*    border-bottom-color: #f17e30 !important;*/
+/*}*/
